@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px auto;
+            padding: 0px;
+        }
+        
+        body {
+            background-image: url(../img/background.jpg);
+        }
+        
+        .wrapper {
+            width: 1089px;
+            height: 800px;
+            background-color: antiquewhite;
+        }
+        
+        nav {
+            width: 1089px;
+            height: 50px;
+            line-height: 50px;
+            background-color: white);
+        }
+        
+        .menu li {
+            float: left;
+            height: 100px;
+            width: 150px;
+            background-color: white;
+            list-style: none;
+            text-indent: 20px;
+            position: relative;
+        }
+        
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .menu li:hover {
+            background-color: pink;
+        }
+        
+        li:hover>a {
+            color: aquamarine;
+            font-style: italic;
+        }
+        
+        .menu li.submenu {
+            display: none;
+        }
+        
+        .menu li:hover .submenu {
+            display: block;
+            position: absolute;
+        }
+        
+        header {
+            height: 150px;
+            width: 100px;
+            background-image: url(../img/h1.jpg);
+            text-shadow: 5px 20px 10px cadetblue;
+            font-size: 60px;
+            text-align: center;
+        }
+        
+        aside {
+            width: 400px;
+            height: 100%;
+            float: left;
+        }
+        
+        section {
+            width: 689px;
+            height: 100%;
+            float: left;
+        }
+        
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul class="menu">
+                <li><a href="">HOME</a></li>
+                <li><a href="">SERVICES </a>
+                    <ul class="submenu">
+                        <li>
+                            <a href=""></a>PHONE</li>
+                        <li>
+                            <a href=""></a>INTERNET</li>
+                        <li>
+                            <a href=""></a>TIVI</li>
+                    </ul>
+                </li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">HELP </a></li>
+            </ul>
+            <span>
+                <form action="" method="post">
+                    <label for="lblEmail">Email : </label>
+                    <input type="email" name="txtEmail" id="txtEmail" required pattern="Nhap Email" >
+                    <input type="submit" value="Go"style ="boder-radius:50%; padding:3px;">
+                </form>
+                   
+            </span>
+        </nav>
+        <header>dau trang</header>
+        <div class="content">
+            <aside>
+                <article>
+                    <h2>HOATDONG 1</h2>
+                    <img src="../img/h1.jpg" alt="" srcset="">
+                </article>
+
+                <article>
+                    <h2>HOATDONG 2</h2>
+                    <img src="../img/h2.jpg" alt="" srcset="">
+
+                </article>
+                <article>
+                    <h2>HOATDONG 3</h2>
+                    <img src="../img/h3.jpg" alt="" srcset="">
+                </article>
+
+            </aside>
+            <section>
+
+            </section>
+        </div>
+        <div class="clear"></div>
+        <footer>cuoi trang</footer>
+    </div>
+</body>
+
+</html>
